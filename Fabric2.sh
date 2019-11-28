@@ -50,7 +50,7 @@ curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.1 1.2.1
 #docker tag hyperledger/fabric-tools:x86_64-1.0.2 hyperledger/fabric-tools:latest (change the tag and the image of needed)
 
 # Installing Hyperledger Fabric
-git clone https://github.com/hyperledger/fabric-samples.git
+#git clone https://github.com/hyperledger/fabric-samples.git
 cd fabric-samples/first-network
 # Start your first network
 ./byfn.sh -m generate
