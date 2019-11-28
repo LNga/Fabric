@@ -24,7 +24,7 @@ source ~/.bashrc
 cd Sawtooth
 
 wget -O sawtooth-default.yaml https://raw.githubusercontent.com/hyperledger/education/master/LFS171x/sawtooth-material/sawtooth-default.yaml
-docker-compose -f sawtooth-default.yaml up
+docker-compose -f sawtooth-default.yaml up -d
 
 # Open an another terminal
 #docker exec -it sawtooth-shell-default bash
@@ -42,8 +42,8 @@ cd ..
 [ -d Fabric ] || mkdir Fabric
 cd Fabric
 
-curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.1
-export PATH=$(pwd)/Fabric/bin:$PATH
+curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.1 1.2.1
+#export PATH=$(pwd)/Fabric/bin:$PATH
 # confirming and visualizing the list of Docker images you’ve just downloaded
 #docker images
 # If the Docker images are not already tagged with the latest tag, perform the following command for each of the Docker images
@@ -54,6 +54,7 @@ git clone https://github.com/hyperledger/fabric-samples.git
 cd fabric-samples/first-network
 # Start your first network
 ./byfn.sh -m generate
+#./byfn.sh -m up
 # Any difficulties
 #docker rmi -f $(docker images -q)
 #TO QUIT : ctrl+C + ./byfn.sh -m down
