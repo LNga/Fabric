@@ -6,7 +6,7 @@ docker run hello-world
 sudo apt-get install -y docker-compose
 
 # Installing Nodejs and npm
-curl -sL https://deb.nodesource.com/setup_10.x | sudo bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
 sudo apt-get install -y nodejs
 
 # Installing go language (get the last version on their website)
